@@ -29,6 +29,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
+                    sh 'docker rm -f $(docker ps -aq)'
                     if (env.GIT_BRANCH == 'origin/dev') {
                         sh 'docker run -d -p 800:80 danushvithiyarth/dev:latest'
                     } else if (env.GIT_BRANCH == 'origin/main') {
