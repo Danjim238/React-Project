@@ -17,7 +17,7 @@ pipeline {
         stage('Push') {
             steps {
                 script {
-                    sh 'docker login -u "danushvithiyarth" -p "$Docker_pass" docker.io'
+                    sh 'docker ps -aq | xargs -r docker rm -f'
                     if (env.GIT_BRANCH == 'origin/dev') {
                         sh 'docker push danushvithiyarth/dev:latest'
                     } else if (env.GIT_BRANCH == 'origin/main') {
