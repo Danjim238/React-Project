@@ -17,7 +17,7 @@ pipeline {
         stage('Push') {
             steps {
                 script {
-                    sh 'docker ps -aq | xargs -r docker rm -f'
+                    sh 'docker login -u "danushvithiyarth" -p "$Docker_pass" docker.io'
                     if (env.GIT_BRANCH == 'origin/dev') {
                         sh 'docker push danushvithiyarth/dev:latest'
                     } else if (env.GIT_BRANCH == 'origin/main') {
@@ -29,7 +29,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sh 'docker rm -f $(docker ps -aq)'
+                    sh 'docker ps -aq | xargs -r docker rm -f'
                     if (env.GIT_BRANCH == 'origin/dev') {
                         sh 'docker run -d -p 800:80 danushvithiyarth/dev:latest'
                     } else if (env.GIT_BRANCH == 'origin/main') {
