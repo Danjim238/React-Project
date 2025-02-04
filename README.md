@@ -93,7 +93,7 @@ These images provide a detailed view of the entire pipeline and the automation p
 This project demonstrates a fully automated CI/CD pipeline, security best practices, and monitoring implementation, ensuring a scalable and maintainable DevOps workflow.
 
 ## Note
-This repository contains two branches "main" & "dev", main branch contains the activity commands and configuration and dev branch conntains the configuration files.
+This repository contains two branches "main" & "dev", main branch contains the project commands and configuration and dev branch conntains the configuration files.
 
 ## Contributors
 - Danush Vithiyarth Jaiganesh - DevOps Engineer
