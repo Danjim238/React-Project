@@ -90,15 +90,6 @@ Monitoring dashboard with health status
 
 These images provide a detailed view of the entire pipeline and the automation processes implemented.
 
-Repository Structure
-
-├── Dockerfile
-├── docker-compose.yml
-├── build.sh
-├── deploy.sh
-├── README.md
-└── .gitignore
-
 This project demonstrates a fully automated CI/CD pipeline, security best practices, and monitoring implementation, ensuring a scalable and maintainable DevOps workflow.
 
 ## Note
