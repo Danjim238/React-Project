@@ -1,24 +1,24 @@
 pipeline {
     agent any
 
-    environment{
-        SCANNER_HOME = tool 'sonar-scanner'
-    }
+    //environment{
+        //SCANNER_HOME = tool 'sonar-scanner'
+    //}
     stages {
-        stage('SonarQube-analysis') {
-            steps {
-                script {
-                    echo "Sonar scanner"
-                    withSonarQubeEnv('sonar-server') {
-                    sh '''
-                      ${SCANNER_HOME}/bin/sonar-scanner \
-                      -Dsonar.projectKey=nodekey \
-                      -Dsonar.projectName=nodejs 
-                      '''
-                    }     
-                }
-            }
-        }
+        //stage('SonarQube-analysis') { ## Stage for SonarQube Code quality check 
+            //steps {
+                //script {
+                    //echo "Sonar scanner"
+                    //withSonarQubeEnv('sonar-server') {
+                    //sh '''
+                      //${SCANNER_HOME}/bin/sonar-scanner \
+                      //-Dsonar.projectKey=nodekey \
+                     // -Dsonar.projectName=nodejs 
+                     // '''
+                    //}     
+                //}
+           // }
+        //}
         stage('Build') {
             steps {
                 script {
