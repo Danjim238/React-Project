@@ -15,6 +15,7 @@ pipeline {
                       -Dsonar.projectKey=nodekey \
                       -Dsonar.projectName=nodejs 
                       '''
+                    }     
                 }
             }
         }
