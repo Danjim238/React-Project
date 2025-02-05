@@ -92,6 +92,9 @@ These images provide a detailed view of the entire pipeline and the automation p
 
 This project demonstrates a fully automated CI/CD pipeline, security best practices, and monitoring implementation, ensuring a scalable and maintainable DevOps workflow.
 
+## Optional Configuration:
+If you need SonarQube code quality check you can use the SonarQube analysis stage and setup/configure SonarQube in the server. 
+
 ## Note
 This repository contains two branches "main" & "dev", main branch contains the project commands and configuration and dev branch conntains the configuration files.
 
