@@ -1,6 +1,6 @@
-# React-Project DevOps Project 
+# React-Application DevOps Project 
 
-Overview
+##Overview
 
 This project is a complete DevOps pipeline implementation, covering application deployment, containerization, CI/CD automation, and monitoring using open-source tools. The goal is to deploy a web application, automate the build and deployment process, and set up a monitoring system to ensure application health.
 
