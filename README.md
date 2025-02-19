@@ -4,7 +4,7 @@
 
 This project is a complete DevOps pipeline implementation, covering application deployment, containerization, CI/CD automation, and monitoring using open-source tools. The goal is to deploy a web application, automate the build and deployment process, and set up a monitoring system to ensure application health.
 
-Technologies Used
+## Technologies Used
 
 Application: Deployed on port 800
 
@@ -26,9 +26,9 @@ Security Groups: Restricts access to authorized IPs
 
 Monitoring: Ensures application uptime and health status
 
-Project Setup & Execution
+## Project Setup & Execution
 
-1. Application Deployment
+### 1. Application Deployment
 
 The application code was refered from:
 
@@ -36,19 +36,19 @@ git clone https://github.com/sriram-R-krishnan/devops-build.git
 
 Run the application on port 800
 
-2. Containerization
+### 2. Containerization
 
 Create a Dockerfile to containerize the application
 
 Write a docker-compose.yml file to manage multi-container setups
 
-3. Automation with Bash Scripts
+### 3. Automation with Bash Scripts
 
 build.sh: Builds the Docker image
 
 deploy.sh: Deploys the image to the server
 
-4. CI/CD with Jenkins
+### 4. CI/CD with Jenkins
 
 Configured Jenkins to:
 
@@ -58,7 +58,7 @@ Trigger builds on dev and master branches
 
 Push to dev (public) and prod (private) Docker Hub repos
 
-5. AWS Setup & Security
+### 5. AWS Setup & Security
 
 Launched a t2.micro EC2 instance
 
@@ -68,13 +68,13 @@ Application Access: Open for all users
 
 Server Login: Restricted to my public IP only
 
-6. Monitoring & Alerts
+### 6. Monitoring & Alerts
 
 Integrated an open-source monitoring system to track the application health
 
 Configured notifications to alert in case of downtime
 
-Activity Log
+## Activity Log
 
 Throughout this project, I documented each step with screenshots to showcase the process, including:
 
